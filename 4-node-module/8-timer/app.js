@@ -6,4 +6,4 @@ const interval = setInterval(() => {
 setTimeout(() => {
   console.log('Timeout!');
   clearInterval(interval);
-}, 6000);
+}, 5100);
