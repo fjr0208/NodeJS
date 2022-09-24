@@ -17,8 +17,8 @@ fs.copyFile('./file.txt', './file2.txt') //
   .catch(console.error);
 
 // folder
-fs.mkdir('sub-folder') //
-  .catch(console.error);
+// fs.mkdir('sub-folder') //
+//   .catch(console.error);
 
 fs.readdir('./') //
   .then(console.log)
