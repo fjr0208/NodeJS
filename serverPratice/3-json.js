@@ -10,6 +10,16 @@ const server = http.createServer((req, res) => {
         if (method === 'GET') {
             res.writeHead(200, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify(courses));
+        } else if (method === 'POST') {
+            const body = [];
+            req.on('data', chunk => {
+                console.log(chunk);
+                body.push(chunk);
+            });
+
+            req.on('end', () => {
+                const course = JSON.parse(Buffer.concat(dody))
+            })
         }
     }
 });
